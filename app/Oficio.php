@@ -10,4 +10,8 @@ class Oficio extends Model
       'destinatario', 'assunto', 'data_envio', 'user_id'
   ];
 
+  public function user()
+  {
+      return $this->belongsTo('App\User');
+  }
 }
